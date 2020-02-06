@@ -13,6 +13,7 @@
   <link rel="stylesheet" href="css/bootstrap.css">
   <link rel="stylesheet" href="css/fontawesome.css">
   <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/lightbox.min.css">
   <link rel="stylesheet" href="css/main.css">
 
   <meta name="theme-color" content="#fafafa">
@@ -42,109 +43,131 @@
             <!-- Attributes & Skills -->
             <div class="tab-pane fade show active" id="skills">
               <div class="row py-3">
-                <!-- Dexterity -->
-                <div class="col-md-6 px-4">
-                  <h3>Dexterity <span class="badge badge-primary ml-2">4 <i class="fas fa-dice-six"></i></span></h3>
-                  <table class="table table-hover skills-table">
-                    <tbody>
-                      <tr>
-                        <td>
-                          Melee Combat - 
-                          <span data-toggle="tooltip" title="Page 346" data-img="electrostaff-info.png">
-                            Electrostaff
-                          </span>
-                          <small class="text-muted">specialization</small>
-                        </td>
-                        <td class="skill-dice">
-                          6 <i class="fas fa-dice-six"></i>
-                        </td>
-                        <td class="skill-info" data-toggle="tooltip" title="Page 36" data-img="melee-combat-info.png">
-                          <i class="fas fa-info"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Melee Parry
-                        </td>
-                        <td class="skill-dice">
-                          6 <i class="fas fa-dice-six"></i>
-                        </td>
-                        <td class="skill-info" data-toggle="tooltip" title="Page 36" data-img="melee-parry-info.png">
-                          <i class="fas fa-info"></i>
-                        </td>
-                      </tr>
-                      <tr>
-                        <td>
-                          Dodge
-                        </td>
-                        <td class="skill-dice">
-                          6 <i class="fas fa-dice-six"></i>
-                        </td>
-                        <td class="skill-info" data-toggle="tooltip" title="Page 36" data-img="melee-dodge-info.png">
-                          <i class="fas fa-info"></i>
-                        </td>
-                      </tr>
-                    </tbody>
-                  </table>
-                </div>
-                <!-- /Dexterity -->
-                <!-- Knowledge -->
-                <div class="col-md-6 px-4">
-                    <h3>
-                      Knowledge 
-                      <span class="badge badge-primary ml-2">
-                        4 <i class="fas fa-dice-six"></i>
-                      </span>
-                    </h3>
-                    <table class="table table-hover skills-table">
-                      <tbody>
-                        <tr>
-                          <td>
-                            Willpower
-                          </td>
-                          <td class="skill-dice">
-                            6 <i class="fas fa-dice-six"></i>
-                          </td>
-                          <td class="skill-info" data-toggle="tooltip" title="Page 43" data-img="willpower-info.png">
-                            <i class="fas fa-info"></i>
-                          </td>
-                        </tr>
-                      </tbody>
-                    </table>
-                </div>
-                <!-- /Knowledge -->
-                <!-- Mechanical -->
-                <div class="col-md-6 px-4">
-                  <h3>
-                      Mechanical 
-                      <span class="badge badge-primary ml-2">
-                        2 <i class="fas fa-dice-six"></i> + 1
-                      </span>
-                    </h3>
-                    <table class="table table-hover skills-table">
-                      <tbody>
-                        <tr>
+                <!-- Left side attributes -->
+                <div class="col-md-6">
+                    <!-- Dexterity -->
+                    <div class="attribute-container">
+                      <h3>
+                        Dexterity 
+                        <span class="badge badge-primary ml-2">
+                          4 
+                          <i class="fas fa-dice-six"></i>
+                        </span>
+                      </h3>
+                      <table class="table table-hover skills-table">
+                        <tbody>
+                          <tr>
                             <td>
-                                Repulsorlift operation -
-                                <span data-toggle="tooltip" title="Page 406" data-img="speeder-bike-info.png">
-                                  Speeder Bikes
-                                </span>
-                                <small class="text-muted">specialization</small>
+                              Melee Combat - 
+                              <span data-toggle="tooltip" title="Page 346" data-img="electrostaff-info.png">
+                                Electrostaff
+                              </span>
+                              <small class="text-muted">specialization</small>
                             </td>
                             <td class="skill-dice">
-                              4 <i class="fas fa-dice-six"></i>
+                              6 <i class="fas fa-dice-six"></i>
                             </td>
-                            <td class="skill-info" data-toggle="tooltip" title="Page 46"
-                               data-img="repulsorlift-operation-info.png">
+                            <td class="skill-info" data-toggle="tooltip" title="Page 36" data-img="melee-combat-info.png">
                               <i class="fas fa-info"></i>
                             </td>
-                        </tr>
-                      </tbody>
-                    </table>
+                          </tr>
+                          <tr>
+                            <td>
+                              Melee Parry
+                            </td>
+                            <td class="skill-dice">
+                              6 <i class="fas fa-dice-six"></i>
+                            </td>
+                            <td class="skill-info" data-toggle="tooltip" title="Page 36" data-img="melee-parry-info.png">
+                              <i class="fas fa-info"></i>
+                            </td>
+                          </tr>
+                          <tr>
+                            <td>
+                              Dodge
+                            </td>
+                            <td class="skill-dice">
+                              6 <i class="fas fa-dice-six"></i>
+                            </td>
+                            <td class="skill-info" data-toggle="tooltip" title="Page 36" data-img="dodge-info.png">
+                              <i class="fas fa-info"></i>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                    </div>
+                    <!-- /Dexterity -->
+                    <!-- Mechanical -->
+                    <div class="attribute-container">
+                      <h3>
+                          Mechanical 
+                          <span class="badge badge-primary ml-2">
+                            2 <i class="fas fa-dice-six"></i> + 1
+                          </span>
+                        </h3>
+                        <table class="table table-hover skills-table">
+                          <tbody>
+                            <tr>
+                                <td>
+                                    Repulsorlift operation -
+                                    <span data-toggle="tooltip" title="Page 406" data-img="speeder-bike-info.png">
+                                      Speeder Bikes
+                                    </span>
+                                    <small class="text-muted">specialization</small>
+                                </td>
+                                <td class="skill-dice">
+                                  4 <i class="fas fa-dice-six"></i>
+                                </td>
+                                <td class="skill-info" data-toggle="tooltip" title="Page 46"
+                                  data-img="repulsorlift-operation-info.png">
+                                  <i class="fas fa-info"></i>
+                                </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                    </div>
+                    <!-- /Mechanical -->
+                    <!-- Strength -->
+                    <div class="attribute-container">
+                      <h3>
+                        Strength 
+                        <span class="badge badge-primary ml-2">
+                          4 <i class="fas fa-dice-six"></i> + 2
+                        </span>
+                      </h3>
+                    </div>
+                    <!-- /Strength -->
                 </div>
-                <!-- /Mechanical -->
-                <!-- /Perception -->
-                <div class="col-md-6 px-4">
+                <!-- /Left side attributes -->
+                <!-- Right side attributes -->
+                <div class="col-md-6">
+                  <!-- Knowledge -->
+                  <div class="attribute-container">
+                      <h3>
+                        Knowledge 
+                        <span class="badge badge-primary ml-2">
+                          4 <i class="fas fa-dice-six"></i>
+                        </span>
+                      </h3>
+                      <table class="table table-hover skills-table">
+                        <tbody>
+                          <tr>
+                            <td>
+                              Willpower
+                            </td>
+                            <td class="skill-dice">
+                              6 <i class="fas fa-dice-six"></i>
+                            </td>
+                            <td class="skill-info" data-toggle="tooltip" title="Page 43" data-img="willpower-info.png">
+                              <i class="fas fa-info"></i>
+                            </td>
+                          </tr>
+                        </tbody>
+                      </table>
+                  </div>
+                  <!-- /Knowledge -->
+                  <!-- /Perception -->
+                  <div class="attribute-container">
                     <h3>
                       Perception 
                       <span class="badge badge-primary ml-2">
@@ -178,15 +201,40 @@
                         </tr>
                       </tbody>
                     </table>
+                  </div>
+                  <!-- /Perception -->
+                  <!-- Technical -->
+                  <div class="attribute-container">
+                    <h3>
+                      Technical 
+                      <span class="badge badge-primary ml-2">
+                        2 <i class="fas fa-dice-six"></i>
+                      </span>
+                    </h3>
+                    <table class="table table-hover skills-table">
+                      <tbody>
+                        <tr>
+                            <td>
+                                Repulsorlift repair -
+                                <span data-toggle="tooltip" title="Page 406" data-img="speeder-bike-info.png">
+                                  Speeder Bikes
+                                </span>
+                                <small class="text-muted">specialization</small>
+                            </td>
+                            <td class="skill-dice">
+                              4 <i class="fas fa-dice-six"></i>
+                            </td>
+                            <td class="skill-info" data-toggle="tooltip" title="Page 64"
+                              data-img="repulsorlift-repair-info.png">
+                              <i class="fas fa-info"></i>
+                            </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                  <!-- /Technical -->
                 </div>
-                <!-- /Perception -->
-                
-                <!-- Mechanical -->
-                <div class="col-md-6 px-4"></div>
-                <!-- /Mechanical -->
-                <!-- Perception -->
-                <div class="col-md-6 px-4"></div>
-                <!-- /Perception -->
+                <!-- /Right side attributes -->
               </div>
             </div>
             <!-- Attributes & Skills -->
@@ -200,11 +248,19 @@
       </div>
     </div>
   </div>
+
+  <div style="display: none">
+    <a id="lightbox-trigger" href="img/404.jpg" data-lightbox="multipurpose">
+      <!-- <img class="example-image" src="images/thumb-1.jpg" alt="Girl looking out people on beach"> -->
+    </a>
+  </div>
+
   <script src="js/vendor/modernizr-3.8.0.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.min.js" integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
   <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.4.1.min.js"><\/script>')</script>
   <script src="js/plugins.js"></script>
   <script src="js/fontawesome.js"></script>
+  <script src="js/lightbox.min.js"></script>
   <!-- <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script> -->
   <script src="js/bootstrap.bundle.js"></script>
   <script src="js/main.js"></script>

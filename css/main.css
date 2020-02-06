@@ -197,11 +197,21 @@ body {
   border-color:#DFD7CA #DFD7CA #fcfcfa;
 }
 
+.skills-table {
+  margin-bottom: 0;
+}
+
 .skills-table .skill-dice {
   width: 85px;
-  text-align: center;
 }
 .skills-table .skill-info {
   width: 35px;
   text-align: center;
+}
+
+.attribute-container {
+	padding: 15px;
+	border: 1px solid #DFD7CA;
+  border-radius: 8px;
+  margin-bottom: 24px;
 }
