@@ -204,9 +204,18 @@ body {
 .skills-table .skill-dice {
   width: 85px;
 }
+
 .skills-table .skill-info {
   width: 35px;
   text-align: center;
+}
+
+.skills-table .skill-info .hidden-hover {
+  visibility: hidden;
+}
+
+.skills-table tr:hover .skill-info .hidden-hover {
+  visibility: visible;
 }
 
 .attribute-container {
