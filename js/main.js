@@ -2,7 +2,6 @@ $("#items").load("Inventory.html");
 $(function () {
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-img]').click(OpenInfo_Click);
-    ItemList_UpdateTotalPrice();
 });
 
 function OpenInfo_Click() {
@@ -22,4 +21,3 @@ function ItemList_UpdateTotalPrice() {
     
     $('#itemlist-total-price').text(total);
 }
-    
