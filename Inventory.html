@@ -1,30 +1,52 @@
 <table class="table table-striped">
     <thead>
-      <tr>
-        <th scope="col">#</th>
-        <th scope="col">First</th>
-        <th scope="col">Last</th>
-        <th scope="col">Handle</th>
-      </tr>
+        <tr>
+            <th scope="col">Item</th>
+            <th scope="col" style="width: 50px;">Qty</th>
+            <th scope="col" style="width: 100px;">Cost (p/u)</th>
+        </tr>
     </thead>
     <tbody>
-      <tr>
-        <th scope="row">1</th>
-        <td>Mark</td>
-        <td>Otto</td>
-        <td>@mdo</td>
-      </tr>
-      <tr>
-        <th scope="row">2</th>
-        <td>Jacob</td>
-        <td>Thornton</td>
-        <td>@fat</td>
-      </tr>
-      <tr>
-        <th scope="row">3</th>
-        <td>Larry</td>
-        <td>the Bird</td>
-        <td>@twitter</td>
-      </tr>
+        <tr class="item-row" data-img="medpac-info.png" data-toggle="tooltip"
+        title="Page 340" data-placement="left">
+        <td>Medpack</td>
+        <td class="item-qty">5</td>
+        <td class="item-price">100</td>
+        </tr>
+        <tr class="item-row" data-img="field-kit-info.png" data-toggle="tooltip"
+        title="Page 342" data-placement="left">
+        <td>Field Kit</td>
+        <td class="item-qty">1</td>
+        <td class="item-price">1000</td>
+        </tr>
+        <tr class="item-row" data-img="enhanced-toolkit-info.png" data-toggle="tooltip"
+        title="Page 344" data-placement="left">
+        <td>Enhanced tool kit</td>
+        <td class="item-qty">1</td>
+        <td class="item-price">1000</td>
+        </tr>
+        <tr class="item-row" title="Page 346" data-img="electrostaff-info.png"
+        data-toggle="tooltip" data-placement="left">
+        <td>Electrostaff</td>
+        <td class="item-qty">1</td>
+        <td class="item-price">5750</td>
+        </tr>
+        <tr class="item-row" title="Page 348" data-img="vibroax-info.png"
+        data-toggle="tooltip" data-placement="left">
+        <td>Vibro-ax</td>
+        <td class="item-qty">1</td>
+        <td class="item-price">500</td>
+        </tr>
+        <tr class="item-row" title="Page 406" data-img="speeder-bike-info.png"
+        data-toggle="tooltip" data-placement="left">
+        <td>Speeder bike</td>
+        <td class="item-qty">1</td>
+        <td class="item-price">6750</td>
+        </tr>
+        <tr>
+        <td class="text-right" colspan="3" id="itemlist-total-price">
+            Undefined
+        </td>
+        </tr>
     </tbody>
-  </table>
+</table>
