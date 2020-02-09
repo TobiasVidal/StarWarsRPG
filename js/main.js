@@ -1,8 +1,14 @@
-$("#items").load("Inventory.html");
 $(function () {
+    $("#items").load("Inventory.html", function () {
+        UpdatePageFunctionality();
+        ItemList_UpdateTotalPrice();
+    });
+});
+
+function UpdatePageFunctionality() {
     $('[data-toggle="tooltip"]').tooltip();
     $('[data-img]').click(OpenInfo_Click);
-});
+}
 
 function OpenInfo_Click() {
     let imgSource = 'img/' + $(this).data('img');
